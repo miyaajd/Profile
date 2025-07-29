@@ -1,0 +1,124 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #efefef;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #777;
+}
+.wrap {
+  margin: 50px auto;
+  width: 400px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 5px 5px 15px #999;
+  position: relative;
+}
+
+/* 상단메뉴 */
+
+.menu {
+  width: 100%;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 23px;
+}
+
+/* 프로필 */
+
+article {
+  width: 100%;
+}
+.profile {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 프로필 이미지 */
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ddd;
+  overflow: hidden;
+  margin-top: 30px;
+  box-shadow: 5px 5px 15px #977a97;
+}
+.profile-img img {
+  display: block;
+  width: 100%;
+}
+
+/* 프로필 텍스트 */
+
+.member1 {
+  font-family: "arial";
+  text-align: center;
+  padding: 15px;
+  color: #333;
+}
+.member1 p {
+  padding: 5px;
+  color: #777;
+}
+
+/* view more 박스 */
+
+.view-box {
+  margin: 25px;
+  width: 180px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px #977a97;
+  background: linear-gradient(45deg, #ca8aca, #fdb7b7);
+}
+.view-box p {
+  font-family: "roboto";
+  padding: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* 컨택 */
+
+.contact-link {
+  width: 100%;
+}
+
+.contact-link li {
+  margin: auto;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0px;
+}
+
+.contact-link i {
+  font-weight: bold;
+  font-size: 20px;
+  display: inline-block;
+}
+.contact-link span {
+  display: inline-block;
+  line-height: 25px;
+  font-family: "roboto";
+  padding-left: 15px;
+  font-weight: 500;
+}
