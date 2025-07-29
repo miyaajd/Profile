@@ -46,6 +46,7 @@ article {
   gap: 30px;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 /* 프로필 이미지 */
@@ -57,7 +58,7 @@ article {
   background-color: #ddd;
   overflow: hidden;
   margin-top: 30px;
-  box-shadow: 5px 5px 15px #977a97;
+  box-shadow: 5px 5px 15px #8ba1b6;
 }
 .profile-img img {
   display: block;
@@ -66,13 +67,13 @@ article {
 
 /* 프로필 텍스트 */
 
-.member1 {
+.member4 {
   font-family: "arial";
   text-align: center;
   padding: 15px;
   color: #333;
 }
-.member1 p {
+.member4 p {
   padding: 5px;
   font-size: 20px;
   color: #777;
@@ -81,11 +82,12 @@ article {
 /* view more 박스 */
 
 .view-box {
-  margin: 25px;
+  margin: 25px auto;
+  /* 박스밀려서 오토줌 */
   width: 180px;
   border-radius: 30px;
-  box-shadow: 5px 5px 15px #977a97;
-  background: linear-gradient(45deg, #ca8aca, #fdb7b7);
+  box-shadow: 5px 5px 15px #8ba1b6;
+  background: linear-gradient(50deg, #c8e4ff, #b4d6be);
 }
 .view-box p {
   font-family: "roboto";
@@ -95,7 +97,7 @@ article {
   color: #fff;
 }
 .view-box:hover {
-  box-shadow: 5px 5px 15px #6d586d;
+  box-shadow: 5px 5px 15px #708294;
 }
 
 /* 컨택 */
@@ -103,12 +105,10 @@ article {
 .contact-link {
   width: 100%;
 }
-
 .contact-link li {
   margin: auto;
   width: 300px;
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 20px;
   padding: 10px 0px;
