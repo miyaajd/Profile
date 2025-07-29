@@ -18,7 +18,7 @@ a {
 .wrap {
   margin: 50px auto;
   width: 400px;
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: #fff;
   box-shadow: 5px 5px 15px #999;
   position: relative;
@@ -74,6 +74,7 @@ article {
 }
 .member1 p {
   padding: 5px;
+  font-size: 18px;
   color: #777;
 }
 
@@ -90,7 +91,11 @@ article {
   font-family: "roboto";
   padding: 15px;
   font-weight: 500;
+  font-size: 20px;
   color: #fff;
+}
+.view-box:hover {
+  box-shadow: 5px 5px 15px #6d586d;
 }
 
 /* 컨택 */
@@ -106,8 +111,10 @@ article {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  border-bottom: 1px solid #eee;
   padding: 10px 0px;
+}
+.contact-link li:first-of-type {
+  border-bottom: 1px solid #eee;
 }
 
 .contact-link i {
@@ -121,4 +128,44 @@ article {
   font-family: "roboto";
   padding-left: 15px;
   font-weight: 500;
+}
+
+/* 멤버별 프로필 링크 만들기 */
+
+.others {
+  padding: 30px 0 60px 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.others a{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ca8aca;
+  /* box-shadow: 5px 5px 13px #a488a4; */
+  transition: all 0.1s;
+}
+.others a:first-of-type{
+  background-color: #f4b7fd;
+  box-shadow: 5px 5px 13px #a488a4;
+}
+.others a:nth-of-type(2){
+  background-color: #b7f2e6;
+  box-shadow: 5px 5px 13px #88b7ae;
+}
+.others a:nth-of-type(3){
+  background-color: #fdeaa3;
+  box-shadow: 5px 5px 13px #aca280;
+}
+.others a:nth-of-type(4){
+  background-color: #c8e4ff;
+  box-shadow: 5px 5px 13px #8ba1b6;
+}
+.others a:hover{
+  filter: saturate(150%);
+}
+.others a.on{
+  filter: saturate(150%);
 }
